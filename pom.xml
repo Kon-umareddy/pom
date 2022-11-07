@@ -32,6 +32,12 @@
   </dependencies>
 
   <build>
+<distributionManagement>
+    <snapshotRepository>
+    <id>deployment</id>
+    <url>http://34.125.85.7:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+ </distributionManagement>
       <finalName>${project.name}</finalName>
     <plugins>
       <plugin>
@@ -51,12 +57,6 @@
         </configuration>
       </plugin>
     </plugins>
-    <distributionManagement>
-    <snapshotRepository>
-    <id>deployment</id>
-    <url>http://34.125.85.7:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
   </build>
   
 </project>
